@@ -1,0 +1,175 @@
+<div class="xiongtab">
+	<div class="g_tale-data-bar">
+		<ul class="g_tale-data-bar-list">
+			<li><a href="#" onclick=javascript:returnbtn(event)><span class="glyphicon glyphicon-hand-left"></span>返回</a></li>
+		</ul>
+	</div>
+	<div class="g_big_wrap_moble">
+		<div class="g_big_wrap_moble_content">
+			<div class="g_show_moble_data">
+				<h1 class="g_show_moble_data-title">
+					<span class="title-name">订单列表详细信息</span>
+					<span class="glyphicon glyphicon-remove g_btn" onclick=javascript:panldelete(event,this)></span>
+					<span class="glyphicon glyphicon-chevron-down g_btn" onclick=javascript:panlscale(event,this)></span>
+				</h1>
+				<div class="g_span2">
+					<table>
+						<tr><td class="keyname">订单编号:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">订单类型:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">物品名称:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">物品类型:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">物品价值:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">物品重量:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">物品描述:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">物品类型:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">物品价值:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">物品重量:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">物品描述:</td><td>订单编号</td></tr>
+					</table>
+				</div>
+				<div class="g_span2">
+					<table>
+						<tr><td class="keyname">保险类型:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">图片:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">酬劳:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">真实酬劳:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">取货时间:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">期望到达时间:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">发货人:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">物品类型:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">物品价值:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">物品重量:</td><td>订单编号</td></tr>
+						<tr><td class="keyname">物品描述:</td><td>订单编号</td></tr>
+					</table>
+				</div>
+			</div>
+			<div class="g_show_moble_data">
+				<h1 class="g_show_moble_data-title">
+					<span class="title-name">订单列表分支信息</span>
+					<span class="glyphicon glyphicon-remove g_btn" onclick=javascript:panldelete(event,this)></span>
+					<span class="glyphicon glyphicon-chevron-down g_btn" onclick=javascript:panlscale(event,this)></span>
+				</h1>
+				<div>
+					<p class="g_table_bar" onclick=javascript:paneltablechange(event,this)>
+						<span class="g_btn_tab active" data-target="targetClass1" >报价</span>
+						<span  class="g_btn_tab" data-target="targetClass2">评论</span>
+						<span  class="g_btn_tab" data-target="targetClass3">动态</span>
+					</p>
+					<div class="g_table_max_height">
+						<div class="g_span1 targetClass1 g_g_table_content">
+							<div class="g_tale-data-bar">
+								<ul class="g_tale-data-bar-list">
+									<li><a href="#" onclick=javascript:dataTablereLoad()><span class="glyphicon glyphicon-refresh"></span>刷新</a></li>
+									<li><a href="#" onclick=javascript:dataTablereShow()><span class="glyphicon glyphicon-search"></span>查看</a></li>
+									<li><a href="#" onclick=javascript:dataTableAdd()><span class="glyphicon glyphicon-plus"></span>增加</a></li>
+									<li><a href="#" onclick=javascript:dataTableDelete()><span class="glyphicon glyphicon-trash"></span>删除</a></li>
+									<li><a href="#" onclick=javascript:dataTableEdit()><span class="glyphicon glyphicon-pencil"></span>编辑</a></li>
+									<li><a href="#" onclick=javascript:dataaddtab({"url":"./view/content/orderlistinfo.html"})><span class="glyphicon glyphicon-star-empty"></span>自定义按钮</a></li>
+								</ul>
+							</div>
+							<div class="g_tale-data-header">
+								<table>
+									<tr><td width="5%"><input type="checkbox" onclick=javascript:allchose(event,this)></td><td width="10%">编号</td><td width="10%">订单类型</td><td width="10%">物品名称</td><td width="10%">酬劳</td><td width="10%">发货人</td><td width="10%">收货人</td><td width="10%">操作人</td><td width="10%">递送人</td><td width="10%">状态</td></tr>
+								</table>
+							</div>
+							<div class="g_tale-data-content" style="margin-bottom: 0;padding-bottom: 0">
+								<div class="g_tale-data-content-wrap" style="height: 300px;overflow: auto">
+									<table>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="g_span1 targetClass2 g_g_table_content" style="display: none">
+							<div class="g_tale-data-bar">
+								<ul class="g_tale-data-bar-list">
+									<li><a href="#" onclick=javascript:dataTablereLoad()><span class="glyphicon glyphicon-refresh"></span>刷新</a></li>
+									<li><a href="#" onclick=javascript:dataTablereShow()><span class="glyphicon glyphicon-search"></span>查看</a></li>
+									<li><a href="#" onclick=javascript:dataTableAdd()><span class="glyphicon glyphicon-plus"></span>增加</a></li>
+									<li><a href="#" onclick=javascript:dataTableDelete()><span class="glyphicon glyphicon-trash"></span>删除</a></li>
+									<li><a href="#" onclick=javascript:dataTableEdit()><span class="glyphicon glyphicon-pencil"></span>编辑</a></li>
+									<li><a href="#" onclick=javascript:dataaddtab({"url":"./view/content/orderlistinfo.html"})><span class="glyphicon glyphicon-star-empty"></span>自定义按钮</a></li>
+								</ul>
+							</div>
+							<div class="g_tale-data-header">
+								<table>
+									<tr><td width="5%"><input type="checkbox" onclick=javascript:allchose(event,this)></td><td width="10%">编号</td><td width="10%">订单类型</td><td width="10%">物品名称</td><td width="10%">酬劳</td><td width="10%">发货人</td><td width="10%">收货人</td><td width="10%">操作人</td><td width="10%">递送人</td><td width="10%">状态</td></tr>
+								</table>
+							</div>
+							<div class="g_tale-data-content" style="margin-bottom: 0;padding-bottom: 0">
+								<div class="g_tale-data-content-wrap" style="height: 300px;overflow: auto">
+									<table>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="g_span1 targetClass3 g_g_table_content" style="display: none">
+							<div class="g_tale-data-bar">
+								<ul class="g_tale-data-bar-list">
+									<li><a href="#" onclick=javascript:dataTablereLoad()><span class="glyphicon glyphicon-refresh"></span>刷新</a></li>
+									<li><a href="#" onclick=javascript:dataTablereShow()><span class="glyphicon glyphicon-search"></span>查看</a></li>
+									<li><a href="#" onclick=javascript:dataTableAdd()><span class="glyphicon glyphicon-plus"></span>增加</a></li>
+									<li><a href="#" onclick=javascript:dataTableDelete()><span class="glyphicon glyphicon-trash"></span>删除</a></li>
+									<li><a href="#" onclick=javascript:dataTableEdit()><span class="glyphicon glyphicon-pencil"></span>编辑</a></li>
+									<li><a href="#" onclick=javascript:dataaddtab({"url":"./view/content/orderlistinfo.html"})><span class="glyphicon glyphicon-star-empty"></span>自定义按钮</a></li>
+								</ul>
+							</div>
+							<div class="g_tale-data-header">
+								<table>
+									<tr><td width="5%"><input type="checkbox" onclick=javascript:allchose(event,this)></td><td width="10%">编号</td><td width="10%">订单类型</td><td width="10%">物品名称</td><td width="10%">酬劳</td><td width="10%">发货人</td><td width="10%">收货人</td><td width="10%">操作人</td><td width="10%">递送人</td><td width="10%">状态</td></tr>
+								</table>
+							</div>
+							<div class="g_tale-data-content"  style="margin-bottom: 0;padding-bottom: 0">
+								<div class="g_tale-data-content-wrap" style="height: 300px;overflow: auto">
+									<table>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+										<tr data-id=x><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	wrokinittabledatakeynameload({
+		"getlist":"testdata/ordermanagement.json" //"初始化数据接口/分页接口({"pagelength":"每页多少条","pagenum":"第几页"})/每页多少页接口({"pagelength":"每页多少条","pagenum":"第几页"})"
+	})
+</script>

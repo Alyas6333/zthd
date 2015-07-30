@@ -1,0 +1,181 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 6px;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,0,0,0.4);
+}
+/*重写头部导航样式*/
+.index_headerNav{
+    min-width: 990px;
+    position: relative;
+    height: 52px;
+    line-height: 52px;
+    background-color: #3194CF;
+}
+.index_headerNav_logo{
+    float: left;
+    font-size: 20px;
+    padding: 0 20px;
+    color: #ffffff;
+    line-height: 52px;
+}
+.index_headerNav_logo span{
+    padding-right:5px;
+}
+.index_headerNav_nav{
+    float: left;
+}
+.index_headerNav_nav li{
+    float: left;
+}
+.index_headerNav_nav li a{
+    display: block;
+    padding: 0 15px 0 10px;
+    color: #FFF;
+}
+.index_headerNav_nav li span{
+    margin-right: 15px;
+}
+.index_headerNav_nav li a:hover{
+    color:orangered;
+    background-color: #e7e7e7;
+}
+.index_headerNav_nav .active{
+    color: orangered !important;
+    background-color: #e7e7e7 !important;
+}
+.index_header_control{
+    float: right;
+    color: #fff;
+}
+.index_header_control span{
+    margin-right: 20px;
+}
+/*主框架样式*/
+.index_mian{
+    width: 100%;
+    height: 100%;
+    padding-top: 52px;
+    margin-top: -52px;
+}
+/*左侧导航样式*/
+.index_left_nav{
+    width: 184px;
+    height: 100%;
+    overflow: auto;
+    background-color: #4D637B;
+    float: left;
+    position: relative;
+}
+.index_left_nav .nav-list-wrap span{
+    font-size: 14px;
+    color: #fff;
+    margin: 15px 15px 10px 15px;
+    display: block;
+}
+.index_left_nav .nav-list-wrap ul li {
+    padding-left: 35px;
+    line-height: 30px;
+    color: #fff;
+}
+.index_left_nav .active{
+    color: orangered !important;
+    background-color: #123;
+    border-left: solid 4px #4E80B2;
+}
+.index_left_nav i{
+    margin-right: 10px;
+}
+.index_left_nav .nav-list-wrap ul{
+}
+.index_left_nav .nav-list-wrap ul li span{
+    float: right;
+    font-size: 12px;
+    margin-top: 8px;
+}
+.index_left_nav .nav-list-wrap ul li:hover{
+    background-color: #cccccc;
+    cursor: pointer;
+    color: orangered;
+}
+.glyphicon-minus{
+    color: orangered;
+}
+.slide_index_left{
+    float: left;
+    margin-top: 18px;
+    color:#fff;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.slide_index_left:hover{
+    cursor: pointer;
+    color:orangered;
+}
+/*用户控制*/
+.index_user_contorl{
+    position: relative;
+}
+.user_ontrol{
+    position: absolute;
+    text-align: center;
+    border: solid 1px #eee;
+    padding: 10px 0;
+    border-radius: 0 0 5px 5px;
+    width: 102px;
+    right: 0px;
+    display: none;
+    top: 35px;
+    z-index: 99999;
+    background-color: #fff;
+}
+.user_ontrol li{
+    line-height: 30px;
+    width: 100px;
+    padding: 0 10px;
+    text-align: left;
+}
+.user_ontrol li:hover{
+    background-color: #EDF2F4;
+    color: orangered;
+    cursor: pointer;
+}
+.user_ontrol ul{
+    color: #999;
+    width: 100px;
+    border-bottom: dashed 1px #e2e2e2;
+}
+.user_ontrol li span{
+    margin: 0px 10px 0 5px;
+}
+/*可变内容区*/
+.index_all_content{
+    height: 100%;
+    overflow: auto;
+    float: left;
+    width: 100%;
+}
+.slide_content_hide{
+    padding-left: 184px;
+    margin-left: -184px;
+}
+#index_all_wrap{
+    height: 100%;
+}

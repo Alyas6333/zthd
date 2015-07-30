@@ -1,0 +1,104 @@
+<div class="xiongtab">
+	<div class="DataGrid" data-dataGrid = "fct_orderList_dataGrid">
+		<div class="g_tale-data-bar">
+			<ul class="g_tale-data-bar-list">
+				<li><a href="#" onclick=javascript:dataTablereLoad(event)><span class="glyphicon glyphicon-refresh"></span>刷新</a></li>
+				<li><a href="#" onclick=javascript:dataTablereShow(event)><span class="glyphicon glyphicon-search"></span>查看</a></li>
+				<li><a href="#" onclick=javascript:dataTableAdd(event)><span class="glyphicon glyphicon-plus"></span>增加</a></li>
+				<li><a href="#" onclick=javascript:dataTableDelete(event)><span class="glyphicon glyphicon-trash"></span>删除</a></li>
+				<li><a href="#" onclick=javascript:dataTableEdit(event)><span class="glyphicon glyphicon-pencil"></span>编辑</a></li>
+				<li><a href="#" onclick=javascript:dataaddtab(event,{"url":"view/content/orderview/doubletemp.html"})><span class="glyphicon glyphicon-star-empty"></span>自定义按钮</a></li>
+			</ul>
+		</div>
+	<div class="g_tale-data-header">
+		<table>
+			<tr><td width="5%"><input type="checkbox" onclick=javascript:allchose(event,this)></td><td width="10%">编号</td><td width="10%">订单类型</td><td width="10%">物品名称</td><td width="10%">酬劳</td><td width="10%">发货人</td><td width="10%">收货人</td><td width="10%">操作人</td><td width="10%">递送人</td><td width="10%">状态</td></tr>
+		</table>
+	</div>
+	<div class="g_tale-data-content">
+		<div class="g_tale-data-content-wrap" id="g_data_wrap">
+		<script type="text/html" id="g_sr_wrap">
+			<table>
+			{{each datalist as value i}}
+			<tr data-id={{value.id}}><td width="5%"><input type="checkbox"></td><td width="10%"><div>{{value.id}}</div></td><td width="10%"><div>{{value.xx1}}</div></td><td width="10%"><div>{{value.xx2}}</div></td><td width="10%"><div>{{value.xx3}}</div></td><td width="10%"><div>{{value.xx4}}</div></td><td width="10%"><div>{{value.xx5}}</div></td><td width="10%"><div>{{value.xx6}}</div></td><td width="10%"><div>{{value.xx7}}</div></td><td width="10%"><div>{{value.xx8}}</div></td></tr>
+			{{/each}}
+			</table>
+		</script>
+	</div>
+</div>
+	<div class="g_tale-data-footer">
+		<ul class="g_tale-data-bar-list">
+			<li><a href="#" onclick=javascript:dataTablereLoad()><span class="glyphicon glyphicon-refresh"></span>刷新</a></li>
+			<li><a href="#" onclick=javascript:dataTableAdd()><span class="glyphicon glyphicon-plus"></span>增加</a></li>
+			<li><a href="#" onclick=javascript:dataTableDelete()><span class="glyphicon glyphicon-trash"></span>删除</a></li>
+			<li><a href="#" onclick=javascript:dataTableEdit()><span class="glyphicon glyphicon-pencil"></span>编辑</a></li>
+			<li><a href="#" onclick=javascript:dataTablexxx()><span class="glyphicon glyphicon-star-empty"></span>自定义按钮</a></li>
+		</ul>
+		<ul class="g_table-data-subpage" data-number="1" onclick=javascript:basesubpage(event,this) >
+			<li><a href="#" class="g_page-subpage prv g_page_disable">上一页</a></li>
+			<li><a href="#" class="pagenumber active">1</a></li>
+			<li><a href="#" class="pagenumber">2</a></li>
+			<li><a href="#" class="pagenumber">3</a></li>
+			<li><a href="#" class="pagenumber">4</a></li>
+			<li><a href="#" class="pagenumber">5</a></li>
+			<li><a href="#"  class="g_page-subpage next">下一页</a></li>
+		</ul>
+		<div class="g_page_munber_chose" data-pageNumber="15" onclick=javascript:basesubpagenumberchrol(event,this)>
+			<span class="g_page_show">每页15条</span>
+			<ul>
+				<li data-pageNumber="60">每页60条</li>
+				<li data-pageNumber="45">每页45条</li>
+				<li data-pageNumber="30">每页30条</li>
+				<li data-pageNumber="15">每页15条</li>
+			</ul>
+		</div>
+		<script type="text/html" id="g_info_sr">
+			<table class="g_row_double g_winDtatable g_show_input" data-id={{orderinfo.id}}>
+				<form>
+					<tr><td class="g_input_namekey">编号:</td><td><input type="text" value={{orderinfo.xxid}} name="xxid" class="g_submit_input"></td><td class="g_input_namekey">订单类型:</td><td><input type="text" value={{orderinfo.xx1}} name="xx4" class="g_submit_input"></td></tr>
+					<tr><td class="g_input_namekey">物品名称:</td><td><input type="text" value={{orderinfo.xx2}} name="xx" class="g_submit_input"></td><td class="g_input_namekey">酬劳:</td><td><input type="text" value={{orderinfo.xx6}} name="xx5" class="g_submit_input"></td></tr>
+					<tr><td class="g_input_namekey">发货人:</td><td><input type="text" value={{orderinfo.xx3}} name="xx1" class="g_submit_input"></td><td class="g_input_namekey">收货人:</td><td><input type="text" value={{orderinfo.xx7}} name="xx6" class="g_submit_input"></td></tr>
+					<tr><td class="g_input_namekey">操作人:</td><td><input type="text" value={{orderinfo.xx4}} name="xx2" class="g_submit_input"></td><td class="g_input_namekey">递送人:</td><td><input type="text" value={{orderinfo.xx8}} name="xx7" class="g_submit_input"></td></tr>
+					<tr><td class="g_input_namekey" >状态:</td><td><input type="text" value={{orderinfo.xx5}} name="xx3" class="g_submit_input"></td></tr>
+				</form>
+			</table>
+		</script>
+		<div class="g_addone" style="display: none;">
+			<table class="g_row_double g_winDtatable " data-id="">
+				<form>
+					<tr><td class="g_input_namekey">编号:</td><td><input type="text" value="" name="xxid" class="g_submit_input"></td><td class="g_input_namekey">订单类型:</td><td><input type="text" value="" name="xx4" class="g_submit_input"></td></tr>
+					<tr><td class="g_input_namekey">物品名称:</td><td><input type="text" value="" name="xx" class="g_submit_input"></td><td class="g_input_namekey">酬劳:</td><td><input type="text" value="" name="xx5" class="g_submit_input"></td></tr>
+					<tr><td class="g_input_namekey">发货人:</td><td><input type="text" value="" name="xx1" class="g_submit_input"></td><td class="g_input_namekey">收货人:</td><td><input type="text" value="" name="xx6" class="g_submit_input"></td></tr>
+					<tr><td class="g_input_namekey">操作人:</td><td><input type="text" value="" name="xx2" class="g_submit_input"></td><td class="g_input_namekey">递送人:</td><td><input type="text" value="" name="xx7" class="g_submit_input"></td></tr>
+					<tr><td class="g_input_namekey" >状态:</td><td><input type="text" value="" name="xx3" class="g_submit_input"></td></tr>
+				</form>
+			</table>
+		</div>
+	</div>
+</div>
+<script>
+		/*所有操作暂定增删改查*/
+		wrokinittabledata([{
+			"dataGridname":"fct_orderList_dataGrid",
+			"keyname":"id", //主表主建
+			"winWidth":"600px", //窗口宽度
+			"winHeight":"250px", //宽口大小
+			"getlist":"testdata/OrderList.json", //"初始化数据接口/分页接口({"pagelength":"每页多少条","pagenum":"第几页"})/每页多少页接口({"pagelength":"每页多少条","pagenum":"第几页"})"
+			"seachlist":"testdata/x.json", //查询接口
+			"savelist":"xxx", //保存接口
+			"delelist":"xxx", //删除接口
+			"addlist":"xxxx", //增加接口
+			"dalistwrap":"#g_data_wrap", //数据网格dom容器id
+			"datslisrc":"g_sr_wrap", //数据网格编译容器id
+			"datalistedit":"g_info_sr", //编辑查看控件id
+			"dateshowadd":".g_addone" //新增id控件
+		}])
+		/*
+		 * keyname:"查询键值"
+		 * winWidth:"弹框宽度"
+		 * windHeight:"弹框高度"
+		 * getlist :"初始化数据接口/分页接口({"pagelength":"每页多少条","pagenum":"第几页"})/每页多少页接口({"pagelength":"每页多少条","pagenum":"第几页"})"
+		 * seachlist : "单个查询接口({"根据提供的keyname":"值"})"
+		 * */
+	</script>
+</div>

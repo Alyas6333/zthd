@@ -1,0 +1,41 @@
+<li class="nav-list-wrap">
+	<span>订单系统</span>
+	<ul>
+		<li class="active" data-link="OrderList">
+			订单列表 <span class="glyphicon glyphicon-chevron-right"></span>
+		</li>
+		<li data-link="OrderAnalysis">
+			订单分析 <span class="glyphicon glyphicon-chevron-right"></span>
+		</li>
+	</ul>
+</li>
+<script>
+	(function(){
+		$.ajax({
+			url: "./view/content/orderview/OrderList.html",
+			type:'get',
+			dataType:'html',
+			success:function(data){
+				$("#index_all_wrap").html(data)
+			}
+		})
+		/*导航路径配置*/
+		var smallnav = {
+			"OrderList":"./view/content/OrderList.html",
+			"OrderAnalysis":"./view/content/xxx.html"
+		}
+
+		$(".index_headerNav_nav li").on("click",function(){
+			var urllink = $(this).data("link");
+			$.ajax({
+				url: smallnav[urllink],
+				type:'get',
+				dataType:'html',
+				success:function(data){
+					$("#index_all_wrap").html(data)
+				}
+			})
+		})
+	})()
+</script>
+

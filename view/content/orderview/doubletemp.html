@@ -1,0 +1,34 @@
+<div class="xiongtab">
+	<div class="g_tale-data-bar">
+		<ul class="g_tale-data-bar-list">
+			<li><a href="#" onclick=javascript:returnbtn(event)><span class="glyphicon glyphicon-hand-left"></span>返回</a></li>
+		</ul>
+	</div>
+	<div class="g_big_wrap_moble">
+		<div class="g_big_wrap_moble_content">
+			<div class="g_show_moble_data">
+				<div id="xx1">
+
+				</div>
+			</div>
+			<div class="g_show_moble_data">
+				<div>
+					<p class="g_table_bar">
+						<span class="g_btn_tab active" data-target="targetClass1" onclick=javascript:paneltablechange(event,{"url":"x1.html","wrap":"#xx2"})>报价</span>
+						<span  class="g_btn_tab" data-target="targetClass2" onclick=javascript:paneltablechange(event,{"url":"view/content/orderview/x2.html","wrap":"#xx2"})>评论</span>
+						<span  class="g_btn_tab" data-target="targetClass3" onclick=javascript:paneltablechange(event,{"url":"view/content/orderview/x3.html","wrap":"#xx2"})>动态</span>
+					</p>
+					<div id="xx2">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	$(function(){
+		baseloadhtml({"url":"view/content/orderview/datalist.html","loaddom":"#xx1"})
+		baseloadhtml({"url":"view/content/orderview/x1.html","loaddom":"#xx2"})
+	})
+</script>
